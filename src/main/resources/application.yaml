@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: biofarma-api
+  datasource:
+    url: jdbc:h2:mem:biofarma
+  h2:
+    console:
+      enabled: true
+  jpa:
+    show-sql: true
+
+server:
+  error:
+    include-message: always
+
+biofarma:
+  nome: Biofarma Farmácia de Manipulação
+  endereco: Rua Raul Soares, 15 - Centro, Caratinga - MG
+  telefones: "(33) 3321-0000,(33) 3321-1221"
+  horario: Seg a Sex das 8h às 18h, Sáb das 8h às 12h
+  whatsapp:
+    numero: "5533999999999"
