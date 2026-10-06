@@ -1,4 +1,4 @@
-package com.biofarma.api.controller;
+package com.biofarma.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
