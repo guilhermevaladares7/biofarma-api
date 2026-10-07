@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biofarma Farmácia de Manipulação | Centro de Caratinga - MG</title>
+<meta name="description" content="Farmácia de manipulação no Centro de Caratinga. Medicamentos sob prescrição, dermatológicos, vitaminas e fitoterápicos preparados no nosso laboratório. Peça seu orçamento pelo WhatsApp.">
+<meta property="og:title" content="Biofarma Farmácia de Manipulação">
+<meta property="og:description" content="Sua fórmula preparada sob medida, no Centro de Caratinga.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/fachada.jpg">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Pharmacy",
+  "name": "Biofarma Farmácia de Manipulação",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua Raul Soares, 15 - Centro",
+    "addressLocality": "Caratinga",
+    "addressRegion": "MG",
+    "addressCountry": "BR"
+  },
+  "telephone": "+55 33 3321-0000",
+  "sameAs": ["https://www.instagram.com/biof_arma/"]
+}
+</script>
+<style>
+  :root {
+    --azul: #1d3bc6;
+    --azul-escuro: #08113a;
+    --ceu: #edf2ff;
+    --capsula: #9db7ff;
+    --texto: #13204a;
+    --cinza: #56627f;
+    --linha: #d8e0f5;
+    --zap: #1a9e52;
+    --ambar: #f4b740;
+    --titulo: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+    --corpo: "Figtree", "Segoe UI", system-ui, sans-serif;
+    --colmeia-azul: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100'%3E%3Cpath d='M28 66L0 50L0 16L28 0L56 16L56 50L28 66L28 100' fill='none' stroke='%231d3bc6' stroke-opacity='.10' stroke-width='2'/%3E%3C/svg%3E");
+    --colmeia-clara: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100'%3E%3Cpath d='M28 66L0 50L0 16L28 0L56 16L56 50L28 66L28 100' fill='none' stroke='%239db7ff' stroke-opacity='.22' stroke-width='2'/%3E%3C/svg%3E");
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+  body { margin: 0; font-family: var(--corpo); color: var(--texto); background: #fff; font-size: 17px; line-height: 1.65; }
+  img { max-width: 100%; display: block; }
+  a { color: var(--azul); }
+  h1, h2, h3 { font-family: var(--titulo); line-height: 1.1; margin: 0; letter-spacing: -0.02em; }
+  h2 { font-size: clamp(1.8rem, 3.6vw, 2.6rem); font-weight: 800; margin-bottom: 14px; }
+  h3 { font-size: 1.2rem; font-weight: 600; }
+  p { margin: 0 0 14px; }
+  :focus-visible { outline: 3px solid var(--ambar); outline-offset: 3px; border-radius: 6px; }
+  .container { width: min(1120px, 100% - 40px); margin: 0 auto; }
+  section { padding: 88px 0; }
+  .sobre + .qualidade { padding-top: 0; }
+  .intro { color: var(--cinza); max-width: 58ch; font-size: 1.05rem; }
+
+  .preencher { border: 2px dashed var(--ambar); background: rgba(244,183,64,.12); border-radius: 8px; padding: 8px 12px; }
+
+  .botao { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 15px 26px; border-radius: 999px; font-weight: 700; font-size: 1rem; text-decoration: none; border: 2px solid transparent; cursor: pointer; font-family: var(--corpo); transition: transform .15s, background .15s; }
+  .botao:hover { transform: translateY(-2px); }
+  .botao-azul { background: var(--azul); color: #fff; }
+  .botao-azul:hover { background: #1834a3; }
+  .botao-zap { background: var(--zap); color: #fff; }
+  .botao-zap:hover { background: #168a47; }
+  .botao-claro { background: #fff; color: var(--azul); border-color: var(--linha); }
+
+  .topo { position: sticky; top: 0; z-index: 20; background: rgba(255,255,255,.94); backdrop-filter: blur(8px); border-bottom: 1px solid var(--linha); }
+  .topo .container { display: flex; align-items: center; justify-content: space-between; height: 72px; gap: 20px; }
+  .logo { display: flex; align-items: center; text-decoration: none; color: var(--azul); font-family: var(--titulo); font-weight: 800; font-size: 1.3rem; }
+  .logo img { height: 46px; width: auto; }
+  .menu { display: flex; align-items: center; gap: 26px; }
+  .menu a { text-decoration: none; color: var(--texto); font-weight: 600; font-size: .95rem; }
+  .menu a:hover { color: var(--azul); }
+  .menu .botao { padding: 10px 20px; font-size: .92rem; color: #fff; }
+  .abrir-menu { display: none; background: none; border: 0; padding: 8px; cursor: pointer; }
+  .abrir-menu span { display: block; width: 24px; height: 2px; background: var(--texto); margin: 5px 0; border-radius: 2px; }
+
+  .hero { padding: 64px 0 72px; background: var(--colmeia-azul), linear-gradient(180deg, var(--ceu) 0%, #fff 100%); overflow: hidden; }
+  .hero .container { display: grid; grid-template-columns: 1.15fr .85fr; align-items: center; gap: 56px; }
+  .hero h1 { font-size: clamp(2.5rem, 6vw, 4.4rem); font-weight: 800; color: var(--azul-escuro); margin-bottom: 22px; }
+  .hero .intro { font-size: 1.15rem; margin-bottom: 30px; }
+  .acoes { display: flex; flex-wrap: wrap; gap: 12px; }
+  .moldura { position: relative; isolation: isolate; justify-self: center; width: min(360px, 100%); aspect-ratio: 9 / 15; }
+  .moldura .foto img { object-position: center 45%; }
+  .moldura .foto { position: absolute; inset: 0; border-radius: 999px; overflow: hidden; border: 10px solid #fff; box-shadow: 0 30px 60px rgba(12,28,79,.18); }
+  .moldura::before { content: ""; position: absolute; inset: -22px -38px 46% 38%; border-radius: 999px; background: var(--capsula); transform: rotate(-24deg); z-index: -1; opacity: .55; }
+  .selo { position: absolute; z-index: 2; left: -34px; bottom: 56px; background: #fff; border-radius: 16px; padding: 12px 16px; box-shadow: 0 14px 30px rgba(12,28,79,.14); font-size: .88rem; line-height: 1.35; max-width: 210px; }
+  .selo strong { display: block; color: var(--azul); font-size: .95rem; }
+
+  .foto { background: linear-gradient(140deg, var(--capsula), var(--azul)); position: relative; }
+  .foto img { width: 100%; height: 100%; object-fit: cover; position: relative; z-index: 1; }
+  .foto[data-legenda]::after { content: attr(data-legenda); position: absolute; inset: 0; display: grid; place-items: center; text-align: center; padding: 20px; color: #fff; font-weight: 600; font-size: .9rem; opacity: .9; }
+
+  .faixa { background: var(--azul-escuro); color: #fff; padding: 28px 0; }
+  .faixa .container { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+  .faixa small { display: block; color: var(--capsula); font-weight: 600; font-size: .82rem; margin-bottom: 2px; }
+  .faixa p { margin: 0; font-weight: 500; }
+  .faixa a { color: #fff; }
+
+  .sobre .container { display: grid; grid-template-columns: 1.1fr .9fr; gap: 64px; align-items: center; }
+  .cartao-farmaceutico { background: var(--colmeia-clara), var(--azul-escuro); color: #fff; border-radius: 28px; padding: 40px 36px; }
+  .cartao-farmaceutico small { color: var(--capsula); font-weight: 600; font-size: .85rem; display: block; margin-bottom: 8px; }
+  .cartao-farmaceutico h3 { font-size: 1.6rem; font-weight: 800; margin-bottom: 10px; }
+  .cartao-farmaceutico p { color: #c9d4f5; margin: 0 0 18px; }
+  .cartao-farmaceutico .preencher { color: #fff; display: inline-block; margin: 0; }
+
+  .qualidade .container { display: grid; grid-template-columns: .85fr 1.15fr; gap: 64px; align-items: center; }
+  .painel-frasco { background: var(--colmeia-clara), var(--azul); border-radius: 32px; padding: 36px; display: grid; place-items: center; }
+  .painel-frasco img { border-radius: 22px; box-shadow: 0 24px 48px rgba(8,17,58,.35); max-height: 520px; width: auto; }
+  .destaques { display: grid; grid-template-columns: 1fr 1fr; gap: 22px 28px; margin-top: 28px; padding: 0; list-style: none; }
+  .destaques li { padding-left: 34px; position: relative; font-size: .97rem; color: var(--cinza); }
+  .destaques li::before { content: ""; position: absolute; left: 0; top: 7px; width: 22px; height: 10px; border-radius: 99px; background: linear-gradient(90deg, var(--azul) 50%, var(--azul-escuro) 50%); transform: rotate(-30deg); }
+  .destaques strong { display: block; font-size: 1rem; color: var(--texto); }
+
+  .servicos { background: var(--ceu); }
+  .lista-servicos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 56px; margin-top: 40px; }
+  .servico { display: grid; grid-template-columns: 54px 1fr; gap: 18px; padding: 26px 0; border-top: 1px solid var(--linha); }
+  .servico .icone { width: 54px; height: 54px; border-radius: 50%; background: #fff; display: grid; place-items: center; }
+  .servico .icone span { width: 30px; height: 13px; border-radius: 99px; background: linear-gradient(90deg, var(--azul) 50%, var(--azul-escuro) 50%); }
+  .servico:nth-child(2n) .icone span { transform: rotate(-35deg); }
+  .servico:nth-child(3n) .icone span { transform: rotate(40deg); }
+  .servico h3 { margin-bottom: 6px; }
+  .servico p { margin: 0; color: var(--cinza); font-size: .97rem; }
+
+  .passos { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin: 44px 0 0; padding: 0; list-style: none; counter-reset: passo; position: relative; }
+  .passos::before { content: ""; position: absolute; top: 27px; left: 28px; right: calc(25% - 46px); height: 2px; background: var(--linha); }
+  .passos li { position: relative; counter-increment: passo; }
+  .passos li::before { content: counter(passo); display: grid; place-items: center; width: 56px; height: 56px; border-radius: 50%; background: var(--azul); color: #fff; font-family: var(--titulo); font-weight: 800; font-size: 1.4rem; margin-bottom: 18px; position: relative; box-shadow: 0 0 0 8px #fff; }
+  .passos h3 { margin-bottom: 6px; }
+  .passos p { color: var(--cinza); font-size: .97rem; margin: 0; }
+
+  .orcamento { background: var(--colmeia-clara), var(--azul); color: #fff; }
+  .orcamento .container { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+  .orcamento .intro { color: #dbe4ff; }
+  .orcamento .aviso { font-size: .9rem; color: var(--capsula); margin-top: 22px; }
+  .formulario { background: #fff; color: var(--texto); border-radius: 28px; padding: 32px; }
+  .formulario label { display: block; font-weight: 600; font-size: .95rem; margin-bottom: 16px; }
+  .formulario input, .formulario textarea { width: 100%; margin-top: 6px; padding: 13px 14px; border: 1.5px solid var(--linha); border-radius: 12px; font: inherit; color: var(--texto); background: #fafbff; }
+  .formulario input:focus, .formulario textarea:focus { border-color: var(--azul); outline: none; background: #fff; }
+  .formulario .botao { width: 100%; }
+  .formulario .botao:disabled { opacity: .75; cursor: wait; transform: none; }
+  .botao.enviando::before { content: ""; width: 16px; height: 16px; border: 2px solid rgba(255,255,255,.35); border-top-color: #fff; border-radius: 50%; animation: girar .7s linear infinite; }
+  #erros { color: #b3261e; font-size: .92rem; margin: 0 0 12px; min-height: 1.2em; }
+
+  .local .container { display: grid; grid-template-columns: .8fr 1.2fr; gap: 56px; align-items: stretch; }
+  .dados-local dl { margin: 24px 0 28px; }
+  .dados-local dt { font-weight: 700; color: var(--azul); font-size: .9rem; }
+  .dados-local dd { margin: 0 0 16px; }
+  .mapa { border-radius: 28px; overflow: hidden; min-height: 380px; background: var(--ceu); }
+  .mapa iframe { width: 100%; height: 100%; min-height: 380px; border: 0; display: block; }
+
+  footer { background: var(--azul-escuro); color: #c9d4f5; padding: 52px 0 36px; font-size: .92rem; }
+  footer .container { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 40px; }
+  footer strong { color: #fff; font-family: var(--titulo); font-size: 1.3rem; display: block; margin-bottom: 8px; }
+  footer a { color: #fff; }
+  footer h3 { color: #fff; font-size: 1rem; margin-bottom: 10px; }
+  footer .preencher { color: #fff; }
+  .rodape-final { grid-column: 1 / -1; border-top: 1px solid rgba(255,255,255,.12); padding-top: 22px; margin-top: 8px; font-size: .84rem; color: #8f9cc4; }
+
+  .flutuante { position: fixed; right: 20px; bottom: 20px; z-index: 15; box-shadow: 0 12px 28px rgba(0,0,0,.22); padding: 14px 20px; }
+  .flutuante svg { width: 20px; height: 20px; }
+
+  #carregando { position: fixed; inset: 0; z-index: 50; background: var(--colmeia-azul), #fff; display: grid; place-items: center; transition: opacity .4s ease; }
+  #carregando.saindo { opacity: 0; pointer-events: none; }
+  .pilula { width: min(220px, 60vw); height: auto; overflow: visible; }
+  .pilula-contorno { fill: none; stroke: var(--azul); stroke-width: 4; stroke-linecap: round; stroke-dasharray: 100; stroke-dashoffset: 100; animation: tracar 2.2s ease-in-out infinite; }
+  .pilula-miolo { opacity: 0; animation: encher 2.2s ease-in-out infinite; }
+
+  @keyframes girar { to { transform: rotate(360deg); } }
+  @keyframes tracar { 0% { stroke-dashoffset: 100; opacity: 1; } 45%, 85% { stroke-dashoffset: 0; opacity: 1; } 100% { stroke-dashoffset: 0; opacity: 0; } }
+  @keyframes encher { 0%, 42% { opacity: 0; } 58%, 85% { opacity: 1; } 100% { opacity: 0; } }
+  @keyframes piscar { 0%, 100% { opacity: 1; } 50% { opacity: .45; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .botao.enviando::before { animation: piscar 1.6s ease-in-out infinite; }
+    .pilula-contorno { animation: none; stroke-dashoffset: 0; }
+    .pilula-miolo { opacity: 1; animation: piscar 1.6s ease-in-out infinite; }
+    .botao:hover { transform: none; }
+  }
+
+  @media (max-width: 920px) {
+    section { padding: 64px 0; }
+    .abrir-menu { display: block; }
+    .menu { display: none; position: absolute; top: 72px; left: 0; right: 0; background: #fff; flex-direction: column; align-items: stretch; gap: 0; padding: 8px 20px 20px; border-bottom: 1px solid var(--linha); }
+    .menu.aberto { display: flex; }
+    .menu a { padding: 12px 0; }
+    .menu .botao { margin-top: 8px; padding: 14px; }
+    .hero .container, .sobre .container, .qualidade .container, .orcamento .container, .local .container { grid-template-columns: 1fr; gap: 40px; }
+    .painel-frasco { padding: 24px; }
+    .painel-frasco img { max-height: 420px; }
+    .logo img { height: 38px; }
+    .moldura { width: min(300px, 80%); }
+    .selo { left: -20px; }
+    .faixa .container { grid-template-columns: 1fr; gap: 16px; }
+    .lista-servicos { grid-template-columns: 1fr; }
+    .passos { grid-template-columns: 1fr 1fr; gap: 32px 24px; }
+    .passos::before { display: none; }
+    footer .container { grid-template-columns: 1fr; gap: 28px; }
+    .flutuante span { display: none; }
+    .flutuante { padding: 16px; }
+  }
+  @media (max-width: 520px) {
+    .destaques { grid-template-columns: 1fr; }
+    .passos { grid-template-columns: 1fr; }
+    .formulario { padding: 24px; }
+    .acoes .botao { width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<div id="carregando" role="status" aria-label="Carregando">
+  <svg class="pilula" viewBox="0 0 220 84" aria-hidden="true">
+    <defs>
+      <linearGradient id="duas-cores" x1="0" x2="1" y1="0" y2="0">
+        <stop offset="50%" stop-color="#1d3bc6"/>
+        <stop offset="50%" stop-color="#08113a"/>
+      </linearGradient>
+    </defs>
+    <rect class="pilula-miolo" x="10" y="10" width="200" height="64" rx="32" fill="url(#duas-cores)"/>
+    <path class="pilula-contorno" pathLength="100" d="M10 42 A32 32 0 0 1 42 10 L178 10 A32 32 0 0 1 210 42"/>
+    <path class="pilula-contorno" pathLength="100" d="M10 42 A32 32 0 0 0 42 74 L178 74 A32 32 0 0 0 210 42"/>
+  </svg>
+</div>
+
+<header class="topo">
+  <div class="container">
+    <a class="logo" href="#inicio">
+      <img src="img/logo.jpg" alt="Biofarma Farmácia de Manipulação">
+    </a>
+    <button class="abrir-menu" id="abrir-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav class="menu" id="menu">
+      <a href="#sobre">A farmácia</a>
+      <a href="#qualidade">Qualidade</a>
+      <a href="#servicos">O que manipulamos</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#onde-estamos">Onde estamos</a>
+      <a class="botao botao-azul" href="#orcamento">Pedir orçamento</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+
+  <section class="hero">
+    <div class="container">
+      <div>
+        <h1>Sua fórmula, do jeito que a receita pede.</h1>
+        <p class="intro">Farmácia de manipulação no Centro de Caratinga. Medicamentos, dermatológicos e suplementos preparados no nosso laboratório, com dose e forma ajustadas pra você.</p>
+        <div class="acoes">
+          <a class="botao botao-azul" href="#orcamento">Pedir orçamento</a>
+          <a class="botao botao-claro" href="/api/whatsapp">Falar no WhatsApp</a>
+        </div>
+      </div>
+      <div class="moldura">
+        <div class="foto" data-legenda="Foto da fachada (img/fachada.jpg)">
+          <img src="img/fachada.jpg" alt="Fachada da Biofarma na Rua Raul Soares, Centro de Caratinga" onerror="this.remove()">
+        </div>
+        <div class="selo"><strong>Centro de Caratinga</strong>Rua Raul Soares, 15</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="faixa">
+    <div class="container">
+      <div><small>Endereço</small><p data-info="endereco">Rua Raul Soares, 15 - Centro, Caratinga - MG</p></div>
+      <div><small>Horário</small><p data-info="horario">Seg a Sex das 8h às 18h, Sáb das 8h às 12h</p></div>
+      <div><small>Telefones</small><p data-info="telefones"><a href="tel:+553333210000">(33) 3321-0000</a> / <a href="tel:+553333211221">(33) 3321-1221</a></p></div>
+    </div>
+  </div>
+
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <div>
+        <h2>Uma farmácia do Centro, com laboratório próprio</h2>
+        <p class="intro">Na Biofarma, cada fórmula é preparada aqui mesmo, a partir da sua receita. Assim dá pra ajustar dose, forma e quantidade ao que o seu médico, dentista ou nutricionista indicou, e tirar dúvidas direto com o farmacêutico.</p>
+        <p class="preencher">Conte aqui a história da farmácia: em que ano abriu, quem fundou, há quanto tempo atende Caratinga. É o que mais gera confiança.</p>
+      </div>
+      <aside class="cartao-farmaceutico">
+        <small>Farmacêutico responsável</small>
+        <h3>Ilber Valadares da Silva Araujo</h3>
+        <p>Acompanha a manipulação das fórmulas e orienta sobre o uso de cada uma.</p>
+        <p class="preencher">CRF-MG 00000</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="qualidade" id="qualidade">
+    <div class="container">
+      <div class="painel-frasco">
+        <img src="img/frasco.jpg" alt="Frasco de fórmula manipulada da Biofarma com rótulo personalizado" loading="lazy">
+      </div>
+      <div>
+        <h2>Qualidade que vai em cada frasco</h2>
+        <p class="intro">Do pedido à entrega, cada etapa da sua fórmula é controlada e registrada.</p>
+        <ul class="destaques">
+          <li><strong>Pesagem computadorizada</strong>Cada ativo é pesado com registro no sistema, pra dose sair exatamente como na receita.</li>
+          <li><strong>Garantia de qualidade</strong>Processo controlado do início ao fim da manipulação.</li>
+          <li><strong>Rótulo com seu nome</strong>Composição, modo de usar, fabricação e validade impressos no frasco.</li>
+          <li><strong>Atendimento farmacêutico</strong>Orientação sobre como e quando tomar sua fórmula.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="servicos" id="servicos">
+    <div class="container">
+      <h2>O que manipulamos</h2>
+      <p class="intro">Cada preparação segue a orientação do profissional de saúde que acompanha você.</p>
+      <div class="lista-servicos">
+        <article class="servico"><div class="icone"><span></span></div><div><h3>Medicamentos sob prescrição</h3><p>Cápsulas, soluções e cremes na dose exata da sua receita.</p></div></article>
+        <article class="servico"><div class="icone"><span></span></div><div><h3>Dermatológicos</h3><p>Cremes, géis, loções e séruns prescritos por dermatologistas.</p></div></article>
+        <article class="servico"><div class="icone"><span></span></div><div><h3>Vitaminas e suplementos</h3><p>Vários ativos combinados numa mesma cápsula, conforme a orientação recebida.</p></div></article>
+        <article class="servico"><div class="icone"><span></span></div><div><h3>Fitoterápicos</h3><p>Extratos vegetais padronizados, preparados com o mesmo controle das demais fórmulas.</p></div></article>
+        <article class="servico"><div class="icone"><span></span></div><div><h3>Pediátricos</h3><p>Doses para crianças e formas mais fáceis de tomar, como xaropes e suspensões.</p></div></article>
+        <article class="servico"><div class="icone"><span></span></div><div><h3>Cosméticos personalizados</h3><p>Shampoos, hidratantes e protetores com ativos escolhidos pra sua pele e seu cabelo.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="como-funciona">
+    <div class="container">
+      <h2>Como funciona</h2>
+      <p class="intro">Do pedido à retirada, sem precisar sair de casa até a fórmula ficar pronta.</p>
+      <ol class="passos">
+        <li><h3>Envie sua receita</h3><p>Pelo formulário abaixo ou com uma foto no WhatsApp.</p></li>
+        <li><h3>Receba o orçamento</h3><p>Respondemos com o valor e o prazo da sua fórmula.</p></li>
+        <li><h3>Manipulamos</h3><p>Sua fórmula é preparada no nosso laboratório.</p></li>
+        <li><h3>Retire na farmácia</h3><p>Na Rua Raul Soares, 15, no Centro de Caratinga.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="orcamento" id="orcamento">
+    <div class="container">
+      <div>
+        <h2>Peça seu orçamento</h2>
+        <p class="intro">Preencha seus dados e conte o que você precisa. Ao enviar, o WhatsApp abre com o pedido já escrito; aproveite a mesma conversa pra mandar a foto da receita.</p>
+        <p class="aviso">Medicamentos sob prescrição só são manipulados mediante apresentação da receita.</p>
+      </div>
+      <form class="formulario" id="form-orcamento" novalidate>
+        <label>Nome<input name="nomeCliente" autocomplete="name" maxlength="100"></label>
+        <label>Telefone com DDD, só números<input name="telefone" type="tel" inputmode="numeric" autocomplete="tel" maxlength="11" placeholder="33999998888"></label>
+        <label>O que você precisa manipular?<textarea name="descricao" rows="4" maxlength="1000" placeholder="Ex.: fórmula da receita do dermatologista, 60 cápsulas"></textarea></label>
+        <p id="erros" role="alert"></p>
+        <button class="botao botao-zap" type="submit" id="botao-enviar">Enviar pedido pelo WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="local" id="onde-estamos">
+    <div class="container">
+      <div class="dados-local">
+        <h2>Onde estamos</h2>
+        <dl>
+          <dt>Endereço</dt>
+          <dd data-info="endereco">Rua Raul Soares, 15 - Centro, Caratinga - MG</dd>
+          <dt>Horário</dt>
+          <dd data-info="horario">Seg a Sex das 8h às 18h, Sáb das 8h às 12h</dd>
+          <dt>Telefones</dt>
+          <dd data-info="telefones"><a href="tel:+553333210000">(33) 3321-0000</a> / <a href="tel:+553333211221">(33) 3321-1221</a></dd>
+          <dt>Instagram</dt>
+          <dd><a href="https://www.instagram.com/biof_arma/" target="_blank" rel="noopener">@biof_arma</a></dd>
+        </dl>
+        <a class="botao botao-zap" href="/api/whatsapp">Falar no WhatsApp</a>
+      </div>
+      <div class="mapa">
+        <iframe title="Mapa da Biofarma no Centro de Caratinga" src="https://www.google.com/maps?q=Rua+Raul+Soares,+15,+Centro,+Caratinga+-+MG&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div>
+      <strong>Biofarma</strong>
+      <p>Farmácia de Manipulação<br><span data-info="endereco">Rua Raul Soares, 15 - Centro, Caratinga - MG</span></p>
+    </div>
+    <div>
+      <h3>Responsável técnico</h3>
+      <p>Ilber Valadares da Silva Araujo<br><span class="preencher">CRF-MG 00000</span></p>
+    </div>
+    <div>
+      <h3>Contato</h3>
+      <p data-info="telefones"><a href="tel:+553333210000">(33) 3321-0000</a> / <a href="tel:+553333211221">(33) 3321-1221</a></p>
+      <p><a href="https://www.instagram.com/biof_arma/" target="_blank" rel="noopener">@biof_arma</a></p>
+    </div>
+    <p class="rodape-final">© <span id="ano"></span> Biofarma Farmácia de Manipulação. <span class="preencher">CNPJ 00.000.000/0000-00</span></p>
+  </div>
+</footer>
+
+<a class="botao botao-zap flutuante" href="/api/whatsapp" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.5L3 21l2-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<script>
+  const TEXTO_BOTAO = "Enviar pedido pelo WhatsApp";
+  const TEMPO_MINIMO_CARREGANDO = 1700;
+  const TEMPO_MAXIMO_CARREGANDO = 3500;
+  const inicioCarregamento = Date.now();
+  const telaCarregando = document.getElementById("carregando");
+  const formulario = document.getElementById("form-orcamento");
+  const botaoEnviar = document.getElementById("botao-enviar");
+  const caixaErros = document.getElementById("erros");
+  const botaoMenu = document.getElementById("abrir-menu");
+  const menu = document.getElementById("menu");
+
+  document.getElementById("ano").textContent = new Date().getFullYear();
+
+  function sumirCarregando() {
+    if (telaCarregando.isConnected) {
+      telaCarregando.classList.add("saindo");
+      setTimeout(function () {
+        telaCarregando.remove();
+      }, 400);
+    }
+  }
+
+  function esconderCarregando() {
+    const tempoPassado = Date.now() - inicioCarregamento;
+    if (tempoPassado >= TEMPO_MINIMO_CARREGANDO) {
+      sumirCarregando();
+    } else {
+      setTimeout(sumirCarregando, TEMPO_MINIMO_CARREGANDO - tempoPassado);
+    }
+  }
+
+  setTimeout(sumirCarregando, TEMPO_MAXIMO_CARREGANDO);
+
+  function preencher(campo, texto) {
+    document.querySelectorAll('[data-info="' + campo + '"]').forEach(function (elemento) {
+      elemento.textContent = texto;
+    });
+  }
+
+  function preencherTelefones(telefones) {
+    document.querySelectorAll('[data-info="telefones"]').forEach(function (elemento) {
+      elemento.textContent = "";
+      telefones.forEach(function (telefone, posicao) {
+        if (posicao > 0) {
+          elemento.append(" / ");
+        }
+        const link = document.createElement("a");
+        link.href = "tel:+55" + telefone.replace(/\D/g, "");
+        link.textContent = telefone;
+        elemento.append(link);
+      });
+    });
+  }
+
+  async function carregarInfo() {
+    try {
+      const resposta = await fetch("/api/info");
+      if (resposta.ok) {
+        const info = await resposta.json();
+        preencher("endereco", info.endereco);
+        preencher("horario", info.horario);
+        preencherTelefones(info.telefones);
+      }
+    } catch (erro) {
+    }
+    esconderCarregando();
+  }
+
+  botaoMenu.addEventListener("click", function () {
+    const aberto = menu.classList.toggle("aberto");
+    if (aberto) {
+      botaoMenu.setAttribute("aria-expanded", "true");
+    } else {
+      botaoMenu.setAttribute("aria-expanded", "false");
+    }
+  });
+
+  menu.querySelectorAll("a").forEach(function (link) {
+    link.addEventListener("click", function () {
+      menu.classList.remove("aberto");
+      botaoMenu.setAttribute("aria-expanded", "false");
+    });
+  });
+
+  function travarBotao() {
+    botaoEnviar.disabled = true;
+    botaoEnviar.classList.add("enviando");
+    botaoEnviar.textContent = "Enviando...";
+  }
+
+  function liberarBotao() {
+    botaoEnviar.disabled = false;
+    botaoEnviar.classList.remove("enviando");
+    botaoEnviar.textContent = TEXTO_BOTAO;
+  }
+
+  formulario.addEventListener("submit", async function (evento) {
+    evento.preventDefault();
+    caixaErros.textContent = "";
+    travarBotao();
+    try {
+      const dados = Object.fromEntries(new FormData(formulario));
+      const resposta = await fetch("/api/orcamentos", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(dados)
+      });
+      const corpo = await resposta.json();
+      if (resposta.ok) {
+        window.location.href = corpo.linkWhatsapp;
+      } else {
+        caixaErros.textContent = Object.values(corpo).join(" ");
+        liberarBotao();
+      }
+    } catch (erro) {
+      caixaErros.textContent = "Não foi possível enviar agora. Tente de novo ou chame a gente no WhatsApp.";
+      liberarBotao();
+    }
+  });
+
+  carregarInfo();
+</script>
+</body>
+</html>
